@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XRI-aU-u5D">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Room Booking View Controller-->
+        <scene sceneID="plS-vW-XA8">
+            <objects>
+                <viewController storyboardIdentifier="RoomBookingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pNa-BA-VjM" customClass="RoomBookingViewController" customModule="MyWorkplace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9zt-01-vsz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPv-pC-IKo">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.113586993" green="0.46840987670000001" blue="0.1043235373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="OZx-hj-du0"/>
+                                    <constraint firstAttribute="height" constant="128" id="pLA-mO-u3q"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room Booking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgh-GO-AY0">
+                                <rect key="frame" x="106" y="317" width="163" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RPv-pC-IKo" firstAttribute="centerY" secondItem="9zt-01-vsz" secondAttribute="centerY" id="oLg-AY-OgJ"/>
+                            <constraint firstItem="RPv-pC-IKo" firstAttribute="centerX" secondItem="9zt-01-vsz" secondAttribute="centerX" id="osl-5O-ptf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QSk-iQ-b1w"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Pa-Fu-yUx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tuR-v1-bOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1935" y="-1494"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Ct-13-ow0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XRI-aU-u5D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K5I-AO-fHw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pNa-BA-VjM" kind="relationship" relationship="rootViewController" id="37L-8f-KuK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gY-B1-fmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2770" y="-1495"/>
+        </scene>
+    </scenes>
+</document>
